@@ -132,6 +132,10 @@ source ~/scripts/allegro/scripts.sh
 
 export ENHANCD_FILTER="fzf --preview 'tree -L 1 -C {}'"
 
+cap () { tee /tmp/capture.out; }
+ret () { cat /tmp/capture.out; }
+
+
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
