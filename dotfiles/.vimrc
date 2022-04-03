@@ -385,4 +385,5 @@ endfunction
 call plug#begin()
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'zsh-users/zsh-syntax-highlighting'
 call plug#end()
