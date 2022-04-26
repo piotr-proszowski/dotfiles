@@ -135,6 +135,8 @@ export ENHANCD_FILTER="fzf --preview 'tree -L 1 -C {}'"
 cap () { tee /tmp/capture.out; }
 ret () { cat /tmp/capture.out; }
 
+eval $(minikube docker-env)
+alias python=python3
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
