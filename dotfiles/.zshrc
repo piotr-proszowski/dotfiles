@@ -77,7 +77,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-syntax-highlighting zsh-autosuggestions colored-man-pages git-open thefuck gradle fzf-tab alias-tips)
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions colored-man-pages git-open thefuck gradle fzf-tab alias-tips rand-quote httpie)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -109,6 +109,7 @@ alias zshconf="vim ~/.zshrc"
 alias idea="(/Applications/IntelliJ\ IDEA.app/Contents/MacOS/idea .&) &> /dev/null"
 alias avro="java -jar /Users/piotr.proszowski/Tools/avro-tools.jar"
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
+alias batdiff="git diff --name-only --diff-filter=d | xargs bat --diff"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -136,7 +137,7 @@ cap () { tee /tmp/capture.out; }
 ret () { cat /tmp/capture.out; }
 
 eval $(minikube docker-env)
-alias python=python3
+alias -g python=python3
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
