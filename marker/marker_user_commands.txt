@@ -7,3 +7,4 @@ git fetch origin pull/{{pull_request_number}}/head:{{pull_request_number}}; git 
 curl http://hermes-events-handler.dh-test.qxlint/pl.allegro.finance.vatoss.CalculationResultEvent/{{message_id}} | jq .event -M | pbcopy##get hermes event by message id
 curl http://listing-user-data.dh-test.qxlint/listing-user-data/users\?login\={{user_login}}##get user id allegro
 sed -i .bak 's/PLN/CZK/g' {{file_name}}; sed -i .bak 's/PL/CZ/g' {{file_name}}##PLN to CZK
+minikube start --kubernetes-version=v1.19.14 --driver=hyperkit --container-runtime=docker##start minikube

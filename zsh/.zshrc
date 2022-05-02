@@ -136,7 +136,6 @@ export ENHANCD_FILTER="fzf --preview 'tree -L 1 -C {}'"
 cap () { tee /tmp/capture.out; }
 ret () { cat /tmp/capture.out; }
 
-eval $(minikube docker-env)
 alias -g python=python3
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
