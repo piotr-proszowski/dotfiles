@@ -32,3 +32,7 @@ function paste-image() {
 function exaclidraw() {
   open -a ~/Applications/Chrome\ Apps.localized/Excalidraw.app/
 }
+
+function xml-to-json() {
+  python3 ~/scripts/xml-to-json
+}
