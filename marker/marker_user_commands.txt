@@ -11,3 +11,5 @@ kubectl config use-context minikube-vpn##minikube vpn
 kubectl config use-context minikube##minikube no vpn
 minikube start --kubernetes-version=v1.23.3 --driver=hyperkit --container-runtime=docker##minikube start
 curl -s -H 'accept: application/vnd.allegro.public.v2+json' -H 'Accept-Language: {{locale}}' 'http://offer-store.dh-prod.qxlint/offers/{{offerId}}?decorate=additionalServicesDefinitions,category,offer,pmdProduct;v4,offerI18n,i18nPmdProduct;v4,categoryI18n;v1' | jq -M '.' > /tmp/{{locale}}.json##call offer-store
+curl http://vte2.hermes-events-handler.dh-dev.qxlint/pl.allegro.finance.vatoss.CalculationResultEvent/{{ message_id }} | jq .event -M | pbcopy##get hermes event vte2
+diff <(jq --sort-keys . {{first_json}}) <(jq --sort-keys . {{second_json}})##compare two jsons

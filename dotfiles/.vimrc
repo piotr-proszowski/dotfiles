@@ -354,4 +354,5 @@ call plug#begin()
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'zsh-users/zsh-syntax-highlighting'
+Plug 'udalov/kotlin-vim'
 call plug#end()

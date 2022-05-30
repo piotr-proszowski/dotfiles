@@ -36,3 +36,7 @@ function exaclidraw() {
 function xml-to-json() {
   python3 ~/scripts/xml-to-json
 }
+
+function timestamp() {
+  date +%Y-%m-%dT%H:%M:%S
+}
