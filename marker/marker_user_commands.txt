@@ -3,7 +3,6 @@ awk '$0 ~ /"orderId"/ {getline; gsub(/"/,""); print $2}' results##get order id
 for i in *; do mv $i $(echo $i | awk 'gsub(/{{to_be_replaced}}/,"{{replacement}}")'); done##rename multiple files
 eval $(cat commands.sh | fzf)##presentation
 ls -la##search for everything
-git fetch origin pull/{{pull_request_number}}/head:{{pull_request_number}}; git checkout {{pull_request_number}}##pull request
 curl http://hermes-events-handler.dh-test.qxlint/pl.allegro.finance.vatoss.CalculationResultEvent/{{message_id}} | jq .event -M | pbcopy##get hermes event by message id
 curl http://listing-user-data.dh-test.qxlint/listing-user-data/users\?login\={{user_login}}##get user id allegro
 sed -i .bak 's/PLN/CZK/g' {{file_name}}; sed -i .bak 's/PL/CZ/g' {{file_name}}##PLN to CZK
@@ -13,3 +12,5 @@ minikube start --kubernetes-version=v1.23.3 --driver=hyperkit --container-runtim
 curl -s -H 'accept: application/vnd.allegro.public.v2+json' -H 'Accept-Language: {{locale}}' 'http://offer-store.dh-prod.qxlint/offers/{{offerId}}?decorate=additionalServicesDefinitions,category,offer,pmdProduct;v4,offerI18n,i18nPmdProduct;v4,categoryI18n;v1' | jq -M '.' > /tmp/{{locale}}.json##call offer-store
 curl http://vte2.hermes-events-handler.dh-dev.qxlint/pl.allegro.finance.vatoss.CalculationResultEvent/{{ message_id }} | jq .event -M | pbcopy##get hermes event vte2
 diff <(jq --sort-keys . {{first_json}}) <(jq --sort-keys . {{second_json}})##compare two jsons
+until false; do sleep 1; ping google.com; done##internet connectivity
+pull_request_number={{pull_request_number}}; git fetch origin pull/$pull_request_number/head:$pull_request_number; git checkout $pull_request_number##fetch pull request for review
