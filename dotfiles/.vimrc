@@ -1,3 +1,20 @@
+
+set nocompatible
+
+call plug#begin()
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'zsh-users/zsh-syntax-highlighting'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'vim-scripts/groovy.vim'
+Plug 'hdiniz/vim-gradle'
+Plug 'valloric/youcompleteme'
+Plug 'sheerun/vim-polyglot'
+Plug 'rafi/awesome-vim-colorschemes'
+Plug 'preservim/nerdtree'
+Plug 'airblade/vim-gitgutter'
+call plug#end()
+
 set history=500
 set clipboard+=unnamed
 
@@ -108,11 +125,9 @@ if $COLORTERM == 'gnome-terminal'
 endif
 
 try
-    colorscheme ron
+    colorscheme space-vim-dark
 catch
 endtry
-
-set background=dark
 
 " Set extra options when running in GUI mode
 if has("gui_running")
@@ -350,9 +365,18 @@ function! VisualSelection(direction, extra_filter) range
     let @" = l:saved_reg
 endfunction
 
-call plug#begin()
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
-Plug 'zsh-users/zsh-syntax-highlighting'
-Plug 'udalov/kotlin-vim'
-call plug#end()
+
+" YouCompleteMe server configuration
+"
+let g:ycm_clangd_binary_path = trim(system('brew --prefix llvm')).'/bin/clangd'
+let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
+nmap <leader>b :YcmCompleter GoToReferences<cr>
+nmap <leader>v :YcmCompleter GoTo<cr>
+let g:ycm_language_server =
+\ [
+\ {  'name': 'kotlin',
+\    'filetypes': [ 'kotlin' ],
+\    'cmdline': [ expand( '$HOME/.lsp/kotlin-language-server/server/build/install/server/bin/kotlin-language-server' ) ],
+\ }
+\ ]
+

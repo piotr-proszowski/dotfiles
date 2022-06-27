@@ -116,20 +116,20 @@ alias batdiff="git diff --name-only --diff-filter=d | xargs bat --diff"
 
 eval $(thefuck --alias)
 
-source ~/scripts/enhancd/init.sh
+source ~/dotfiles/enhancd/init.sh
 
 alias f="fuck"
-alias tcr='sh ~/scripts/tcr.sh'
+alias tcr='sh ~/dotfiles/tcr.sh'
 alias jq='jq -C'
 alias cat='ccat'
 
 [[ -s "$HOME/.local/share/marker/marker.sh" ]] && source "$HOME/.local/share/marker/marker.sh"
 
-source ~/scripts/awesome-fzf.zsh
+source ~/dotfiles/awesome-fzf.zsh
 enable-fzf-tab
 
-source ~/scripts/common.sh
-source ~/scripts/allegro/scripts.sh
+source ~/dotfiles/scripts/common.sh
+source ~/dotfiles/allegro/scripts.sh
 
 export ENHANCD_FILTER="fzf --preview 'tree -L 1 -C {}'"
 
@@ -139,6 +139,8 @@ ret () { cat /tmp/capture.out; }
 alias -g python=python3
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export GOPATH=~/go
+export PATH=$PATH:$GOPATH/bin
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
