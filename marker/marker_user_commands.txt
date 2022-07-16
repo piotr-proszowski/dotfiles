@@ -14,3 +14,4 @@ curl http://vte2.hermes-events-handler.dh-dev.qxlint/pl.allegro.finance.vatoss.C
 diff <(jq --sort-keys . {{first_json}}) <(jq --sort-keys . {{second_json}})##compare two jsons
 until false; do sleep 1; ping google.com; done##internet connectivity
 pull_request_number={{pull_request_number}}; git fetch origin pull/$pull_request_number/head:$pull_request_number; git checkout $pull_request_number##fetch pull request for review
+cp ~/.git-templates/hooks/commit-msg .git/hooks/##commit-msg

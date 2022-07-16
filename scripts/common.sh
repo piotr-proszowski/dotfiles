@@ -33,6 +33,8 @@ function exaclidraw() {
   open -a ~/Applications/Chrome\ Apps.localized/Excalidraw.app/
 }
 
+function review() { open -a /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome $(boom echo git-review) }
+
 function xml-to-json() {
   python3 ~/scripts/xml-to-json
 }

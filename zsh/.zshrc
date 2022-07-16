@@ -77,7 +77,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-syntax-highlighting zsh-autosuggestions colored-man-pages git-open thefuck gradle fzf-tab alias-tips rand-quote httpie)
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions colored-man-pages git-open thefuck gradle fzf-tab alias-tips httpie k)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -122,6 +122,9 @@ alias f="fuck"
 alias tcr='sh ~/dotfiles/tcr.sh'
 alias jq='jq -C'
 alias cat='ccat'
+alias k='k --no-vcs'
+alias ls='k'
+alias l='ls'
 
 [[ -s "$HOME/.local/share/marker/marker.sh" ]] && source "$HOME/.local/share/marker/marker.sh"
 
@@ -135,8 +138,6 @@ export ENHANCD_FILTER="fzf --preview 'tree -L 1 -C {}'"
 
 cap () { tee /tmp/capture.out; }
 ret () { cat /tmp/capture.out; }
-
-alias -g python=python3
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export GOPATH=~/go

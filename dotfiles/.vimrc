@@ -13,6 +13,9 @@ Plug 'sheerun/vim-polyglot'
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'preservim/nerdtree'
 Plug 'airblade/vim-gitgutter'
+Plug 'jreybert/vimagit'
+Plug 'vimwiki/vimwiki'
+Plug 'pseewald/anyfold'
 call plug#end()
 
 set history=500
@@ -28,7 +31,7 @@ au FocusGained,BufEnter * checktime
 
 " With a map leader it's possible to do extra key combinations
 " like <leader>w saves the current file
-let mapleader = ","
+let mapleader = "\<F3>"
 
 " Fast saving
 nmap <leader>w :w!<cr>
@@ -365,6 +368,8 @@ function! VisualSelection(direction, extra_filter) range
     let @" = l:saved_reg
 endfunction
 
+" Vimagit - show all files when reviewing changes
+let g:magit_default_fold_level = 0
 
 " YouCompleteMe server configuration
 "
@@ -372,6 +377,7 @@ let g:ycm_clangd_binary_path = trim(system('brew --prefix llvm')).'/bin/clangd'
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 nmap <leader>b :YcmCompleter GoToReferences<cr>
 nmap <leader>v :YcmCompleter GoTo<cr>
+nmap <leader>f :Ag<cr>
 let g:ycm_language_server =
 \ [
 \ {  'name': 'kotlin',
