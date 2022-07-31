@@ -142,6 +142,16 @@
     #add all, commit with message and push to remote
     apm = "!f() { git add --all && git commit -m \"$@\" && git push; }; f"
 
+    # utilities for review
+    
+    # list files which have changed since REVIEW_BASE
+    # (REVIEW_BASE defaults to 'master' in my zshrc)
+    files = !git diff --name-only $(git merge-base HEAD \"$REVIEW_BASE\")
+
+    # Same as above, but with a diff stat instead of just names
+    # (better for interactive use)
+    stat = !git diff --stat $(git merge-base HEAD \"$REVIEW_BASE\")
+
 [apply]
     whitespace = nowarn
 [core]
@@ -155,3 +165,5 @@
 	required = true
 [init]
 	templatedir = /Users/piotr.proszowski/.git-templates
+[hub]
+	protocol = ssh

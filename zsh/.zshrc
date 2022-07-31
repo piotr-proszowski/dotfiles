@@ -104,9 +104,9 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias zshconf="vim ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-alias idea="(/Applications/IntelliJ\ IDEA.app/Contents/MacOS/idea .&) &> /dev/null"
+alias zshrc="vim ~/.zshrc"
+alias vimrc="vim ~/.vimrc"
+alias idea="(~/Library/Application\ Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/221.6008.13/IntelliJ\ IDEA.app/Contents/MacOS/idea .&) &> /dev/null"
 alias avro="java -jar /Users/piotr.proszowski/Tools/avro-tools.jar"
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 alias batdiff="git diff --name-only --diff-filter=d | xargs bat --diff"
@@ -125,6 +125,7 @@ alias cat='ccat'
 alias k='k --no-vcs'
 alias ls='k'
 alias l='ls'
+alias vimwiki='vim ~/vimwiki/index.wiki'
 
 [[ -s "$HOME/.local/share/marker/marker.sh" ]] && source "$HOME/.local/share/marker/marker.sh"
 
@@ -133,8 +134,11 @@ enable-fzf-tab
 
 source ~/dotfiles/scripts/common.sh
 source ~/dotfiles/allegro/scripts.sh
+source ~/dotfiles/zsh/hugo
 
 export ENHANCD_FILTER="fzf --preview 'tree -L 1 -C {}'"
+
+export REVIEW_BASE=master
 
 cap () { tee /tmp/capture.out; }
 ret () { cat /tmp/capture.out; }

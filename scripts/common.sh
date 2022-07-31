@@ -29,7 +29,7 @@ function paste-image() {
   copyq read image/png 0 > $1.png
 }
 
-function exaclidraw() {
+function draw() {
   open -a ~/Applications/Chrome\ Apps.localized/Excalidraw.app/
 }
 

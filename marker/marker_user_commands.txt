@@ -15,3 +15,4 @@ diff <(jq --sort-keys . {{first_json}}) <(jq --sort-keys . {{second_json}})##com
 until false; do sleep 1; ping google.com; done##internet connectivity
 pull_request_number={{pull_request_number}}; git fetch origin pull/$pull_request_number/head:$pull_request_number; git checkout $pull_request_number##fetch pull request for review
 cp ~/.git-templates/hooks/commit-msg .git/hooks/##commit-msg
+git heatmap | sd "(.*)/(.*).(groovy|kt|yml)" '$2.$3'##heatmap review

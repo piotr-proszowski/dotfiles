@@ -12,14 +12,29 @@ Plug 'valloric/youcompleteme'
 Plug 'sheerun/vim-polyglot'
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'preservim/nerdtree'
+Plug 'jistr/vim-nerdtree-tabs'
 Plug 'airblade/vim-gitgutter'
-Plug 'jreybert/vimagit'
 Plug 'vimwiki/vimwiki'
 Plug 'pseewald/anyfold'
+Plug 'kien/ctrlp.vim'
+Plug 'tpope/vim-rhubarb'
+Plug 'Raimondi/delimitMate'
+Plug 'pechorin/any-jump.vim'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 call plug#end()
 
 set history=500
 set clipboard+=unnamed
+
+" With a map leader it's possible to do extra key combinations
+" like <leader>w saves the current file
+let mapleader = "\<F3>"
+
+" Vim sinppets
+let g:UltiSnipsExpandTrigger="<leader>s"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 " Enable filetype plugins
 filetype plugin on
@@ -28,10 +43,6 @@ filetype indent on
 " Set to auto read when a file is changed from the outside
 set autoread
 au FocusGained,BufEnter * checktime
-
-" With a map leader it's possible to do extra key combinations
-" like <leader>w saves the current file
-let mapleader = "\<F3>"
 
 " Fast saving
 nmap <leader>w :w!<cr>
@@ -46,6 +57,10 @@ command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set 7 lines to the cursor - when moving vertically using j/k
 set so=7
+
+" Nerd Tree
+nmap <leader>n :NERDTreeToggle<cr>
+nmap <leader>1 :NERDTreeFind<cr>
 
 " Avoid garbled characters in Chinese language windows OS
 let $LANG='en'
@@ -153,6 +168,8 @@ set ffs=unix,dos,mac
 
 " autosave
 autocmd TextChanged,TextChangedI <buffer> silent write
+" autosave for vimwiki
+autocmd CursorHold * update
 set noswapfile
 
 
@@ -368,8 +385,10 @@ function! VisualSelection(direction, extra_filter) range
     let @" = l:saved_reg
 endfunction
 
-" Vimagit - show all files when reviewing changes
-let g:magit_default_fold_level = 0
+" Git
+nmap <leader>g :G difftool -y<cr>
+nmap <leader>G :G difftool -y $REVIEW_BASE<cr>
+nmap <leader>B :G blame<cr>
 
 " YouCompleteMe server configuration
 "
@@ -382,7 +401,11 @@ let g:ycm_language_server =
 \ [
 \ {  'name': 'kotlin',
 \    'filetypes': [ 'kotlin' ],
-\    'cmdline': [ expand( '$HOME/.lsp/kotlin-language-server/server/build/install/server/bin/kotlin-language-server' ) ],
+\    'cmdline': [ expand( '$HOME/.lsp/kotlin-language-server/server/build/install/server/bin/kotlin-language-server')],
+\ },
+\ {  'name': 'groovy',
+\    'filetypes': [ 'groovy' ],
+\    'cmdline': [ 'java', '-jar', expand( '$HOME/.lsp/groovy-language-server/build/libs/groovy-language-server-all.jar')],
 \ }
 \ ]
 
