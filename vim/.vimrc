@@ -24,7 +24,7 @@ Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 call plug#end()
 
-set history=500
+set history=5000
 set clipboard+=unnamed
 
 " With a map leader it's possible to do extra key combinations
