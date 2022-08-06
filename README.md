@@ -8,16 +8,15 @@ Each piece of software collected here has explanation what it is and how do I us
 How to configure each piece of software is inside `install.sh` script.
  
 ## Kitty
-### Description
 As a terminal emulator I like to use [kitty](https://sw.kovidgoyal.net/kitty/), because it's super fast and simple - it just has a [single configuration file](./kitty/kitty.conf). Previously I was using [iTerm2](https://iterm2.com/) but it was significantly slower for me and configuration seemed to be harder.
 
-### Hammerspoon
+## Hammerspoon
 I like to have my terminal very close to me, that's why it appears and disappears with `⌘ + §`. For this I use [hammerspoon](https://www.hammerspoon.org/). I use it because... it worked :D Probably I could migrate to [Karabiner](https://github.com/pqrs-org/Karabiner-Elements) someday. 
 
-### Karabiner
+## Karabiner
 Caps lock is a funny button on a keyboard - it's functionality is so useless that I decided to remap it to `F3`. As I don't know many usages of `F3` I can use this key for lot of actions. For example Caps Lock (mapped to F3) is my `mapleader` in `VIM` - I find it super useful!
 
-### ZSH and Oh My Zsh
+## ZSH and Oh My Zsh
 > Oh My Zsh will not make you a 10x developer...but you may feel like one! [...] Strangers will come up to you in cafés and ask you, "that is amazing! are you some sort of genius?"
 Quote from the [main page](https://ohmyz.sh/#install). 
 
@@ -31,5 +30,5 @@ What I'm getting thanks to that:
 - Opening git repository in browser with `git open` command. ([git-open](https://github.com/paulirish/git-open))
 - Interactive feeling thanks to [fzf](https://github.com/junegunn/fzf) and [fzf-tab](https://github.com/Aloxaf/fzf-tab)
 
-### Marker
-### Boom
+## Marker
+## Boom
