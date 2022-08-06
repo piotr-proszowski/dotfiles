@@ -17,11 +17,11 @@ I like to have my terminal very close to me, that's why it appears and disappear
 Caps lock is a funny button on a keyboard - it's functionality is so useless that I decided to remap it to `F3`. As I don't know many usages of `F3` I can use this key for lot of actions. For example Caps Lock (mapped to F3) is my `mapleader` in `VIM` - I find it super useful!
 
 ## ZSH and Oh My Zsh
+Quote from the [main page](https://ohmyz.sh/#install):
 > Oh My Zsh will not make you a 10x developer...but you may feel like one! [...] Strangers will come up to you in cafés and ask you, "that is amazing! are you some sort of genius?"
-Quote from the [main page](https://ohmyz.sh/#install). 
 
 Bunch of plugins that makes life brighter.
-What I'm getting thanks to that:
+What I'm getting thanks to using this:
 - Beautiful appearance ([powerlevel10k](https://github.com/romkatv/powerlevel10k))
 - Syntax highliting ([zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting))
 - Suggestions (written in gray, taken from history) ([zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions))
