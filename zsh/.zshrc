@@ -82,6 +82,7 @@ plugins=(
   git
   zsh-syntax-highlighting
   zsh-autosuggestions
+  zsh-fzf-history-search
   colored-man-pages
   git-open
   gradle

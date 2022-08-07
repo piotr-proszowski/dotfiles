@@ -68,13 +68,42 @@ brew install tmux
 ### Link configuration
 ln -s ~/dotfiles/tmux/.tmux.conf ~/.tmux.conf
 
+################################################################
+################################################################
+
 ## Marker
 git clone --depth=1 https://github.com/pindexis/marker ~/.marker && ~/.marker/install.py
 
 ### Link saved commands
 ln -s ~/dotfiles/marker/marker_user_commands.txt ~/.local/share/marker/user_commands.txt
 
+################################################################
+################################################################
+
 ## Boom
 ### Probably it should be installed differently, but it works for me: https://www.moncefbelyamani.com/why-you-shouldn-t-use-the-system-ruby-to-install-gems-on-a-mac/
 gem install boom
 
+################################################################
+################################################################
+
+## fd
+brew install fd
+
+################################################################
+################################################################
+
+## ag
+brew install the_silver_searcher
+
+################################################################
+################################################################
+
+## sd
+brew install sd
+
+################################################################
+################################################################
+
+## jq
+brew install jq

@@ -28,7 +28,7 @@ What I'm getting thanks to using this:
 - Autocompletion for some tools (i.e git, fd) (plugins: git, httpie, fd, k, gradle)
 - Remainders that I didn't use defined alias ([alias-tips]())
 - Opening git repository in browser with `git open` command. ([git-open](https://github.com/paulirish/git-open))
-- Interactive feeling thanks to [fzf](https://github.com/junegunn/fzf) and [fzf-tab](https://github.com/Aloxaf/fzf-tab)
+- Interactive tabs, history and others [fzf](https://github.com/junegunn/fzf) and [fzf-tab](https://github.com/Aloxaf/fzf-tab)
 
 ## Enhancd
 Jump easily to any place that was visited in the past. Just type `cd` and enjoy. ([Enhancd repo](https://github.com/b4b4r07/enhancd)).
@@ -59,4 +59,23 @@ Used for saving bookmarks.
 - `boom` - shows categories
 - `boom category` - show bookmarks in category
 
-## 
+## K
+[K is the new l, yo!](https://github.com/supercrabtree/k)
+
+## Fd
+Find simplified. [fd repo](https://github.com/sharkdp/fd)
+Just type `fd anything` to search for any file containing `anything` in current dir.
+
+## The silver searcher
+[Silver searcher repo](https://github.com/ggreer/the_silver_searcher)
+What a great tool, super fast compared to `grep` and much more intuitive. Just type `ag something` to find occurences in all files in current directory (recursively) containing `something`.
+
+## Sd
+[S]earch & [d]isplace.
+Simplified `sed`. [sd repo](https://github.com/chmln/sd).
+
+## Jq
+A tool that is the number 1 for working with jsons. [jq repo](https://github.com/stedolan/jq)
+
+## Vim
+Because I'm using Vim a lot I decided to create special list for it: [LINK](./vim/README.md)
