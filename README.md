@@ -96,6 +96,9 @@ Nice tool for monitoring resources on the system.
 [Httpie repo](https://github.com/httpie/httpie)
 Awesome http client (much more intuitive than curl).
 
+## Vimium
+[Awesome plugin browser](https://github.com/philc/vimium)
+I keep the config so I can experiment with it's settings
 
 ## Vim
 Because I'm using Vim a lot I decided to create special list for it: [LINK](./vim/README.md)
