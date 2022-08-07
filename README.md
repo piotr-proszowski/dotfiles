@@ -100,5 +100,7 @@ Awesome http client (much more intuitive than curl).
 [Awesome plugin browser](https://github.com/philc/vimium)
 I keep the config so I can experiment with it's settings
 
+It's also worth to mention this trick: [How to leave search bar with keyboard](https://xavierchow.github.io/2016/03/07/vimium-leave-address-bar/)
+
 ## Vim
 Because I'm using Vim a lot I decided to create special list for it: [LINK](./vim/README.md)
