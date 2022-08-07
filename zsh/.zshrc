@@ -139,12 +139,11 @@ alias vimwiki='vim ~/vimwiki/index.wiki'
 
 [[ -s "$HOME/.local/share/marker/marker.sh" ]] && source "$HOME/.local/share/marker/marker.sh"
 
-source ~/dotfiles/awesome-fzf.zsh
+source ~/dotfiles/fzf/awesome-fzf.zsh
 enable-fzf-tab
 
 source ~/dotfiles/scripts/common.sh
 source ~/dotfiles/allegro/scripts.sh
-source ~/dotfiles/zsh/hugo
 
 export ENHANCD_FILTER="fzf --preview 'tree -L 1 -C {}'"
 
@@ -153,7 +152,6 @@ export REVIEW_BASE=master
 cap () { tee /tmp/capture.out; }
 ret () { cat /tmp/capture.out; }
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export GOPATH=~/go
 export PATH=$PATH:$GOPATH/bin
 
