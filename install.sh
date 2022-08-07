@@ -112,7 +112,7 @@ brew install jq
 ################################################################
 
 ## Git (should be preinstalled on macos)
-ln -s ~/dotfiles/git/.git-templates ~/.git-templates
+ln -s ~/dotfiles/git/.git-template ~/.git-template
 ln -s ~/dotfiles/git/.gitconfig ~/.gitconfig
 
 ################################################################
