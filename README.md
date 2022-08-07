@@ -33,5 +33,30 @@ What I'm getting thanks to using this:
 ## Enhancd
 Jump easily to any place that was visited in the past. Just type `cd` and enjoy. ([Enhancd repo](https://github.com/b4b4r07/enhancd)).
 
+## Tmux
+Once you have a cool terminal you want use it more... So you split terminal into smaller panes, create new windows and sessions, you name those so you can come back later to it and start working on something new. This is the power of tmux.
+
+My most favourite functionalities (with my keybindings):
+- horizontal split: `⌘ + b`, `o` 
+- vertical split: `⌘ + b`, `e` 
+- vim like movements between splits: `⌘ + b`, `h/j/k/l`
+- (un)focus given pane (maximize/minimize it): `⌘ + b`, `z`
+- rotate pane: `⌘ + b`, `r`
+- rearrange panes: `⌘ + b`, `↩`
+- create new window: `⌘ + b`, `c`
+- navigate between windows: `⌘ + b`, `0-9`
+- rename window: `⌘ + b`, `,`
+- move window: `⌘ + b`, `.`
+- navigate between windows and panes: `⌘ + b`, `w`
+
 ## Marker
+[It's an awesome tool](https://github.com/pindexis/marker) for saving commands you've created/encountered. With `⌃ + SPACE` you can retrieve those and easily find (they all are mapped to description). Super useful tool.
+
 ## Boom
+Used for saving bookmarks.
+- `boom category name http://example.org` - adds new bookmark of `http://example.org` with name `name` to category `category`.
+- `boom name` (if name is unique across categories) or `boom category name` - retrieves previously saved bookmark and copy it
+- `boom` - shows categories
+- `boom category` - show bookmarks in category
+
+## 
