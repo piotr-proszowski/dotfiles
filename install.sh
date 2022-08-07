@@ -54,3 +54,5 @@ ln -s ~/dotfiles/oh-my-zsh/powerlevel10k/.p10k.zsh ~/.p10k.zsh
 
 ## Install fzf
 brew install fzf
+
+## 

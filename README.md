@@ -30,5 +30,8 @@ What I'm getting thanks to using this:
 - Opening git repository in browser with `git open` command. ([git-open](https://github.com/paulirish/git-open))
 - Interactive feeling thanks to [fzf](https://github.com/junegunn/fzf) and [fzf-tab](https://github.com/Aloxaf/fzf-tab)
 
+## Enhancd
+Jump easily to any place that was visited in the past. Just type `cd` and enjoy. ([Enhancd repo](https://github.com/b4b4r07/enhancd)).
+
 ## Marker
 ## Boom

@@ -84,7 +84,6 @@ plugins=(
   zsh-autosuggestions
   colored-man-pages
   git-open
-  thefuck
   gradle
   alias-tips
   httpie
@@ -121,18 +120,15 @@ source $ZSH/oh-my-zsh.sh
 alias zshrc="vim ~/.zshrc"
 alias vimrc="vim ~/.vimrc"
 alias idea="(~/Library/Application\ Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/221.6008.13/IntelliJ\ IDEA.app/Contents/MacOS/idea .&) &> /dev/null"
-alias avro="java -jar /Users/piotr.proszowski/Tools/avro-tools.jar"
+alias avro="java -jar ~/dotfiles/tools/avro-tools.jar"
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 alias batdiff="git diff --name-only --diff-filter=d | xargs bat --diff"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-eval $(thefuck --alias)
-
 source ~/dotfiles/enhancd/init.sh
 
-alias f="fuck"
 alias tcr='sh ~/dotfiles/tcr.sh'
 alias jq='jq -C'
 alias cat='ccat'
