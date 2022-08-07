@@ -134,3 +134,18 @@ brew install htop
 
 ## Httpie
 brew install httpie
+
+################################################################
+################################################################
+
+## Yabai
+brew install koekeishiya/formulae/yabai
+ln -s ~/dotfiles/yabai/.yabairc ~/.yabairc
+chmod +x ~/dotfiles/yabai/.yabairc
+
+################################################################
+################################################################
+
+## skhd
+brew install koekeishiya/formulae/skhd
+ln -s ~/dotfiles/skhd/skhd ~/.config

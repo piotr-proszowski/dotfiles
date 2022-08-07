@@ -37,17 +37,19 @@ Jump easily to any place that was visited in the past. Just type `cd` and enjoy.
 Once you have a cool terminal you want use it more... So you split terminal into smaller panes, create new windows and sessions, you name those so you can come back later to it and start working on something new. This is the power of tmux.
 
 My most favourite functionalities (with my keybindings):
-- horizontal split: `⌘ + b`, `o` 
-- vertical split: `⌘ + b`, `e` 
-- vim like movements between splits: `⌘ + b`, `h/j/k/l`
-- (un)focus given pane (maximize/minimize it): `⌘ + b`, `z`
-- rotate pane: `⌘ + b`, `r`
-- rearrange panes: `⌘ + b`, `↩`
-- create new window: `⌘ + b`, `c`
-- navigate between windows: `⌘ + b`, `0-9`
-- rename window: `⌘ + b`, `,`
-- move window: `⌘ + b`, `.`
-- navigate between windows and panes: `⌘ + b`, `w`
+- horizontal split: `⌃ + b`, `o` 
+- vertical split: `⌃ + b`, `e` 
+- vim like movements between splits: `C⌃ + b`, `h/j/k/l`
+- (un)focus given pane (maximize/minimize it): `⌃ + b`, `z`
+- rotate pane: `⌃ + b`, `r`
+- rearrange panes: `⌃ + b`, `↩`
+- create new window: `⌃ + b`, `c`
+- navigate between windows: `⌃ + b`, `0-9`
+- rename window: `⌃ + b`, `,`
+- move window: `⌃ + b`, `.`
+- navigate between windows and panes: `⌃ + b`, `w`
+- entering visual mode (to navigate history and copy): `⌃ + b`, `[`
+- yanking/copying with `y`
 
 ## Marker
 [It's an awesome tool](https://github.com/pindexis/marker) for saving commands you've created/encountered. With `⌃ + SPACE` you can retrieve those and easily find (they all are mapped to description). Super useful tool.
@@ -101,6 +103,13 @@ Awesome http client (much more intuitive than curl).
 I keep the config so I can experiment with it's settings.
 
 It's also worth to mention this trick: [How to leave search bar with keyboard](https://xavierchow.github.io/2016/03/07/vimium-leave-address-bar/)
+
+## Yabai + skhd
+Tile manager plus shortcut maker. Make sense with all those open windows!
+Configuration stolen from: https://blog.dsubachev.com/install-a-tiling-window-manager-on-your-mac/
+
+[Yabai repo](https://github.com/koekeishiya/yabai)
+[skhd repo](https://github.com/koekeishiya/skhd)
 
 ## Vim
 Because I'm using Vim a lot I decided to create special list for it: [LINK](./vim/README.md)
