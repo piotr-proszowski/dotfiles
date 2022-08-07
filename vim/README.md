@@ -14,3 +14,6 @@ set noswapfile
 ```
 
 This is life changer. I set up this configuration once I lost my notes after meeting and didn't have such situation.
+
+
+I will proceed with this readme next time. All configurations already sit in this directory and will be updated frequently. README.md will grow with time ;)
