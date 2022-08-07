@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/Users/piotr.proszowski/Projects/amelinium/transaction-tax-archive/src/main/kotlin/pl/allegro/finance/vatoss/transactiontaxarchive/domain/cost'
+let g:netrw_dirhist_6='/Users/piotr.proszowski/Projects/amelinium/currency-exchange-rates-collector/src/main/kotlin/pl/allegro/finance/currencies/currencyexchangeratescollector/domain'
+let g:netrw_dirhist_5='/Users/piotr.proszowski'
+let g:netrw_dirhist_4='/Users/piotr.proszowski/Workshop/leetcode'
+let g:netrw_dirhist_3='/Users/piotr.proszowski/Workshop/leetcode/symmetric-tree'
+let g:netrw_dirhist_2='/Users/piotr.proszowski/Projects/amelinium/currency-exchange-calculator/src/main/kotlin/pl/allegro/finance/currencies/currencyexchangecalculator/domain'
+let g:netrw_dirhist_1='/Users/piotr.proszowski/Projects/amelinium/currency-exchange-calculator/src/main/kotlin/pl/allegro/finance/currencies/currencyexchangecalculator'
+let g:netrw_dirhist_0='/Users/piotr.proszowski/Projects/amelinium/currency-exchange-calculator/src/main/kotlin/pl/allegro/finance/currencies/currencyexchangecalculator/domain'
+let g:netrw_dirhist_9='/Users/piotr.proszowski/Projects/amelinium/currency-exchange-calculator/src/main/kotlin/pl/allegro/finance/currencies/currencyexchangecalculator'
+let g:netrw_dirhist_8='/var/folders/36/ycyd3y7d4mjctf18v4_jndj80000gq/T/kotlinlangserver9161546444122062376'

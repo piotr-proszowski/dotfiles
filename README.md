@@ -97,8 +97,8 @@ Nice tool for monitoring resources on the system.
 Awesome http client (much more intuitive than curl).
 
 ## Vimium
-[Awesome plugin browser](https://github.com/philc/vimium)
-I keep the config so I can experiment with it's settings
+[Awesome plugin browser](https://github.com/philc/vimium) that allows you to navigate the browser with your keyboard only.
+I keep the config so I can experiment with it's settings.
 
 It's also worth to mention this trick: [How to leave search bar with keyboard](https://xavierchow.github.io/2016/03/07/vimium-leave-address-bar/)
 
