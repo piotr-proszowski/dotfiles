@@ -77,5 +77,25 @@ Simplified `sed`. [sd repo](https://github.com/chmln/sd).
 ## Jq
 A tool that is the number 1 for working with jsons. [jq repo](https://github.com/stedolan/jq)
 
+## Git
+I recommend using git from CLI - I find it very convenient to use, especially with some cool aliases. You can find what aliases I use [here](./git).
+
+For fun I would recommend also looking at [Jakub Nabrdalik's git kurwa](https://github.com/jakubnabrdalik/gitkurwa) (I took many aliases from there).
+
+In [Vim](#Vim) section I show some plugins that help interacting with git code review.
+
+## CopyQ
+Awesome clipboard manager - I always have few hundreds most recent objects (text and images) close at hand. `⌘ + E` opens and closes the app.
+[Copyq repo](https://github.com/hluk/CopyQ)
+
+## Htop
+Nice tool for monitoring resources on the system.
+[Htop official website](https://htop.dev/)
+
+## httpie
+[Httpie repo](https://github.com/httpie/httpie)
+Awesome http client (much more intuitive than curl).
+
+
 ## Vim
 Because I'm using Vim a lot I decided to create special list for it: [LINK](./vim/README.md)

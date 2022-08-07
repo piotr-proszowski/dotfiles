@@ -164,6 +164,6 @@
 	process = git-lfs filter-process
 	required = true
 [init]
-	templatedir = /Users/piotr.proszowski/.git-templates
+	templatedir = ~/dotfiles/.git-templates
 [hub]
 	protocol = ssh
