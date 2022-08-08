@@ -393,8 +393,8 @@ nmap <leader>g :G difftool -y<cr>
 nmap <leader>G :G difftool -y $REVIEW_BASE<cr>
 nmap <leader>B :G blame<cr>
 
-" YouCompleteMe server configuration
-"
+" YouCompleteMe
+let g:ycm_auto_hover=''
 let g:ycm_clangd_binary_path = trim(system('brew --prefix llvm')).'/bin/clangd'
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 nmap <leader>b :YcmCompleter GoToReferences<cr>

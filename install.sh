@@ -66,6 +66,7 @@ brew install fzf
 brew install tmux
 
 ### Link configuration
+ln -s ~/dotfiles/tmux/.tmux.reset.conf ~/.tmux.reset.conf
 ln -s ~/dotfiles/tmux/.tmux.conf ~/.tmux.conf
 
 ################################################################

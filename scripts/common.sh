@@ -42,3 +42,7 @@ function xml-to-json() {
 function timestamp() {
   date +%Y-%m-%dT%H:%M:%S
 }
+
+function get() {
+  vim -c ":w! /tmp/output.txt" -
+}

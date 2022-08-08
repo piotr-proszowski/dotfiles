@@ -91,6 +91,7 @@ plugins=(
   k
   fd
   web-search
+  docker
 )
 
 source $ZSH/oh-my-zsh.sh

@@ -165,5 +165,6 @@
 	required = true
 [init]
 	templatedir = ~/dotfiles/git/.git-template/template
+	defaultBranch = main
 [hub]
 	protocol = ssh
