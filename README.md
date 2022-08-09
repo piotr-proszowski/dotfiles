@@ -111,5 +111,9 @@ Configuration stolen from: https://blog.dsubachev.com/install-a-tiling-window-ma
 [Yabai repo](https://github.com/koekeishiya/yabai)
 [skhd repo](https://github.com/koekeishiya/skhd)
 
+## Spectacle
+[Official page](https://www.spectacleapp.com/)
+Moving and resizing windows on MacOS
+
 ## Vim
 Because I'm using Vim a lot I decided to create special list for it: [LINK](./vim/README.md)

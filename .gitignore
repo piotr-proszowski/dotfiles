@@ -2,4 +2,5 @@ allegro/
 enhancd/
 
 copyq/*.dat
+copyq/*.lock
 vim/.vim/backup/

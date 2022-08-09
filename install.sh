@@ -150,3 +150,10 @@ chmod +x ~/dotfiles/yabai/.yabairc
 ## skhd
 brew install koekeishiya/formulae/skhd
 ln -s ~/dotfiles/skhd/skhd ~/.config
+
+################################################################
+################################################################
+
+## Spectacles
+# Download manually https://www.spectacleapp.com/
+ln -s ~/dotfiles/spectacle/Shortcuts.json ~/Library/Application\ Support/Spectacle/Shortcuts.json
