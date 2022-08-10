@@ -157,3 +157,7 @@ ln -s ~/dotfiles/skhd/skhd ~/.config
 ## Spectacles
 # Download manually https://www.spectacleapp.com/
 ln -s ~/dotfiles/spectacle/Shortcuts.json ~/Library/Application\ Support/Spectacle/Shortcuts.json
+
+## Bartib
+# Download manually https://www.spectacleapp.com/
+brew install bartib

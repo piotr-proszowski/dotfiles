@@ -157,6 +157,8 @@ ret () { cat /tmp/capture.out; }
 export GOPATH=~/go
 export PATH=$PATH:$GOPATH/bin
 
+export BARTIB_FILE="/Users/piotr.proszowski/activities.bartib"
+
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"

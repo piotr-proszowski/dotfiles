@@ -22,6 +22,7 @@ Plug 'Raimondi/delimitMate'
 Plug 'pechorin/any-jump.vim'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
+Plug 'tpope/vim-commentary'
 call plug#end()
 
 set history=5000
@@ -412,3 +413,5 @@ let g:ycm_language_server =
 \ }
 \ ]
 
+" vim-commentary
+" autocmd FileType apache setlocal commentstring=#\ %s

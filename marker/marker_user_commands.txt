@@ -16,3 +16,4 @@ until false; do sleep 1; ping google.com; done##internet connectivity
 pull_request_number={{pull_request_number}}; git fetch origin pull/$pull_request_number/head:$pull_request_number; git checkout $pull_request_number##fetch pull request for review
 git heatmap | sd "(.*)/(.*).(groovy|kt|yml)" '$2.$3'##heatmap review
 cp ~/dotfiles/git/.git-template/template/hooks/commit-msg .git/hooks/##git hook commit-ms
+http --verbose POST http://vte2.transaction-tax-archive.dh-dev.qxlint/merchant-reports merchantId="106944080" startDate="2022-08-10T07:39:17.754356Z" endDate="2022-08-10T07:47:23.294239Z"##trigger merchant report

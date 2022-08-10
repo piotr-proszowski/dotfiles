@@ -6,6 +6,8 @@ Worth noting: I use this configuration on MacOS (most of things should work on a
 
 Each piece of software collected here has explanation what it is and how do I use it below.
 How to configure each piece of software is inside `install.sh` script.
+
+If you see anything I could do better, please [inform me about this](https://github.com/piotr-proszowski/dotfiles/issue://github.com/piotr-proszowski/dotfiles/issues)!
  
 ## Kitty
 As a terminal emulator I like to use [kitty](https://sw.kovidgoyal.net/kitty/), because it's super fast and simple - it just has a [single configuration file](./kitty/kitty.conf). Previously I was using [iTerm2](https://iterm2.com/) but it was significantly slower for me and configuration seemed to be harder.
@@ -114,6 +116,10 @@ Configuration stolen from: https://blog.dsubachev.com/install-a-tiling-window-ma
 ## Spectacle
 [Official page](https://www.spectacleapp.com/)
 Moving and resizing windows on MacOS
+
+## Bartib 
+Simple time tracker - useful for reflection for what my time goes.
+[Bartib repo](https://github.com/nikolassv/bartib)
 
 ## Vim
 Because I'm using Vim a lot I decided to create special list for it: [LINK](./vim/README.md)
