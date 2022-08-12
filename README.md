@@ -81,6 +81,9 @@ Simplified `sed`. [sd repo](https://github.com/chmln/sd).
 ## Jq
 A tool that is the number 1 for working with jsons. [jq repo](https://github.com/stedolan/jq)
 
+## Yq
+Similar to previous one but for yamls. [yq repo](https://github.com/mikefarah/yq)
+
 ## Git
 I recommend using git from CLI - I find it very convenient to use, especially with some cool aliases. You can find what aliases I use [here](./git).
 
@@ -120,6 +123,9 @@ Moving and resizing windows on MacOS
 ## Bartib 
 Simple time tracker - useful for reflection for what my time goes.
 [Bartib repo](https://github.com/nikolassv/bartib)
+
+## Gum
+Cool way of writing scripts. [Gum repo](https://github.com/charmbracelet/gum)
 
 ## Vim
 Because I'm using Vim a lot I decided to create special list for it: [LINK](./vim/README.md)

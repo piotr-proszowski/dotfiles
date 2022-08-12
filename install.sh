@@ -112,6 +112,12 @@ brew install jq
 ################################################################
 ################################################################
 
+## yq
+brew install yq
+
+################################################################
+################################################################
+
 ## Git (should be preinstalled on macos)
 ln -s ~/dotfiles/git/.git-template ~/.git-template
 ln -s ~/dotfiles/git/.gitconfig ~/.gitconfig
@@ -158,6 +164,16 @@ ln -s ~/dotfiles/skhd/skhd ~/.config
 # Download manually https://www.spectacleapp.com/
 ln -s ~/dotfiles/spectacle/Shortcuts.json ~/Library/Application\ Support/Spectacle/Shortcuts.json
 
+################################################################
+################################################################
+
+## Gum
+brew install gum
+
+################################################################
+################################################################
+
 ## Bartib
 # Download manually https://www.spectacleapp.com/
 brew install bartib
+

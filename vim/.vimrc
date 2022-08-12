@@ -23,6 +23,7 @@ Plug 'pechorin/any-jump.vim'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'tpope/vim-commentary'
+Plug 'ashisha/image.vim'
 call plug#end()
 
 set history=5000
