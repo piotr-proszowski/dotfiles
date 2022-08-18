@@ -17,3 +17,50 @@ pull_request_number={{pull_request_number}}; git fetch origin pull/$pull_request
 git heatmap | sd "(.*)/(.*).(groovy|kt|yml)" '$2.$3'##heatmap review
 cp ~/dotfiles/git/.git-template/template/hooks/commit-msg .git/hooks/##git hook commit-ms
 http --verbose POST http://vte2.transaction-tax-archive.dh-dev.qxlint/merchant-reports merchantId="106944080" startDate="2022-08-10T07:39:17.754356Z" endDate="2022-08-10T07:47:23.294239Z"##trigger merchant report
+http --verbose {{url}}##http verbose call
+http {{bets_url}} |
+pup ".bet_tab .subTable :nth-child(3) json{}" |
+jq """
+. |
+  _nwise(3) |
+  {
+    homeTeam: .[0].children[0].text,
+    awayTeam: .[1].children[0].text,
+    odds: [
+      {
+        name: \"HOME_TEAM_WINS\",
+        value: .[0].children[].children[].text
+      },
+      {
+        name: \"AWAY_TEAM_WINS\",
+        value: .[1].children[].children[].text
+      },
+      {
+        name: \"THERE_WILL_BE_DRAW\",
+        value: .[2].children[].children[].text
+      }
+    ]
+  }
+http {{bets_url}} |
+pup ".bet_tab .subTable :nth-child(3) json{}" |
+jq """
+. |
+  _nwise(3) |
+  {
+    homeTeam: .[0].children[0].text,
+    awayTeam: .[1].children[0].text,
+    odds: [
+      {
+        name: \"HOME_TEAM_WINS\",
+        value: .[0].children[].children[].text
+      },
+      {
+        name: \"AWAY_TEAM_WINS\",
+        value: .[1].children[].children[].text
+      },
+      {
+        name: \"THERE_WILL_BE_DRAW\",
+        value: .[2].children[].children[].text
+      }
+    ]
+  }

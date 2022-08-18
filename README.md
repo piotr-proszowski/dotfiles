@@ -89,6 +89,8 @@ I recommend using git from CLI - I find it very convenient to use, especially wi
 
 For fun I would recommend also looking at [Jakub Nabrdalik's git kurwa](https://github.com/jakubnabrdalik/gitkurwa) (I took many aliases from there).
 
+There is also [GH Cli](https://cli.github.com/) which is pretty useful to interact with [GitHub](github.com). Especially when you want to manage your repo from CLI.
+
 In [Vim](#Vim) section I show some plugins that help interacting with git code review.
 
 ## CopyQ
@@ -126,6 +128,9 @@ Simple time tracker - useful for reflection for what my time goes.
 
 ## Gum
 Cool way of writing scripts. [Gum repo](https://github.com/charmbracelet/gum)
+
+## md2confl
+Awesome tool for converting `.md` files to `.confl`. I like write notes in `markdown` so when I have to create jira ticket I don't need to convert manually my notes to Jira format.
 
 ## Vim
 Because I'm using Vim a lot I decided to create special list for it: [LINK](./vim/README.md)

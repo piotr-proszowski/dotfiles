@@ -92,6 +92,10 @@ plugins=(
   fd
   web-search
   docker
+  fd
+  gh
+  ag
+  emoji
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -118,7 +122,7 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
+# Aliases
 alias zshrc="vim ~/.zshrc"
 alias vimrc="vim ~/.vimrc"
 alias idea="(~/Library/Application\ Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/221.6008.13/IntelliJ\ IDEA.app/Contents/MacOS/idea .&) &> /dev/null"
@@ -138,6 +142,7 @@ alias k='k --no-vcs'
 alias ls='k'
 alias l='ls'
 alias vimwiki='vim ~/vimwiki/index.wiki'
+alias new-project='bash ~/project-templates/new-project.sh'
 
 [[ -s "$HOME/.local/share/marker/marker.sh" ]] && source "$HOME/.local/share/marker/marker.sh"
 

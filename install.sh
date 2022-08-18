@@ -121,6 +121,7 @@ brew install yq
 ## Git (should be preinstalled on macos)
 ln -s ~/dotfiles/git/.git-template ~/.git-template
 ln -s ~/dotfiles/git/.gitconfig ~/.gitconfig
+brew install gh
 
 ################################################################
 ################################################################
@@ -174,6 +175,11 @@ brew install gum
 ################################################################
 
 ## Bartib
-# Download manually https://www.spectacleapp.com/
 brew install bartib
 
+################################################################
+################################################################
+
+## md2confl
+brew tap kentaro-m/homebrew-md2confl
+brew install md2confl

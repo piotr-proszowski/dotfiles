@@ -36,7 +36,7 @@ function draw() {
 function review() { open -a /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome $(boom echo git-review) }
 
 function xml-to-json() {
-  python3 ~/scripts/xml-to-json
+  python3 ~/dotfiles/scripts/xml-to-json
 }
 
 function timestamp() {

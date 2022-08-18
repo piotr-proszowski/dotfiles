@@ -6,7 +6,7 @@
     autosetupmerge = true
 
 [push]
-    default = upstream
+	default = current
 [rerere]
     enabled = true
 [rebase]
