@@ -175,6 +175,8 @@ set shortmess-=S
 autocmd TextChanged,TextChangedI <buffer> silent write
 " autosave for vimwiki
 autocmd CursorHold * update
+let g:vimwiki_dir_link="index"
+let g:vimwiki_auto_chdir=1
 set noswapfile
 
 

@@ -5,6 +5,17 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+# load module for list-style selection
+zmodload zsh/complist
+
+# use the module above for autocomplete selection
+zstyle ':completion:*' menu yes select
+
+# now we can define keybindings for complist module
+# you want to trigger search on autocomplete items
+# so we'll bind some key to trigger history-incremental-search-forward function
+bindkey -M menuselect '?' history-incremental-search-forward
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -96,6 +107,7 @@ plugins=(
   gh
   ag
   emoji
+  ripgrep
 )
 
 source $ZSH/oh-my-zsh.sh
