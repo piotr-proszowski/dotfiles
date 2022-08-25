@@ -7,5 +7,5 @@ review in vim hangs when there are bigger files
 - Slack - control only with keyboard
 - kibana CLI
 - vim displaying csv's
-- static imports (In IntelliJ it's done via context help...)
+- static imports (In IntelliJ it's done via context help...) in VIM
 - Better syntax highlighing in vim

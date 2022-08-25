@@ -16,7 +16,7 @@ Plug 'jistr/vim-nerdtree-tabs'
 Plug 'airblade/vim-gitgutter'
 Plug 'vimwiki/vimwiki'
 Plug 'pseewald/anyfold'
-Plug 'kien/ctrlp.vim'
+" Plug 'kien/ctrlp.vim' not that useful if you have ag ;)
 Plug 'tpope/vim-rhubarb'
 Plug 'Raimondi/delimitMate'
 Plug 'pechorin/any-jump.vim'
