@@ -48,4 +48,5 @@ Allows me to comment with `gcc`. Why vim didn't have such a feature? I don't kno
 Mostly useful for searching files. I mapped leader + f to `Ag` so I have similar experience as in IntelliJ for files searching.
 
 
+Those are most beneficial features, however maybe I missed something.
 If you noticed something I'm using and it's not mentioned here - please let me know! :)
