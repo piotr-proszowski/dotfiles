@@ -6,6 +6,6 @@ review in vim hangs when there are bigger files
 - review in vim - colors like github
 - Slack - control only with keyboard
 - kibana CLI
-- vim displaying csv's
 - static imports (In IntelliJ it's done via context help...) in VIM
 - Better syntax highlighing in vim
+- CLI tool for fetching depenedncies from mvnrepository 

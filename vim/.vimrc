@@ -404,6 +404,7 @@ let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 nmap <leader>b :YcmCompleter GoToReferences<cr>
 nmap <leader>v :YcmCompleter GoTo<cr>
 nmap <leader>f :Ag<cr>
+nmap <leader>o :Files<cr>
 let g:ycm_language_server =
 \ [
 \ {  'name': 'kotlin',
