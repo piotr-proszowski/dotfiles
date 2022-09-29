@@ -15,6 +15,7 @@ Plug 'preservim/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'airblade/vim-gitgutter'
 Plug 'vimwiki/vimwiki'
+Plug 'michal-h21/vimwiki-sync'
 Plug 'pseewald/anyfold'
 " Plug 'kien/ctrlp.vim' not that useful if you have ag ;)
 Plug 'tpope/vim-rhubarb'
@@ -178,6 +179,12 @@ autocmd CursorHold * update
 let g:vimwiki_dir_link="index"
 let g:vimwiki_auto_chdir=1
 set noswapfile
+
+" for vimwiki-sync
+let g:vimwiki_sync_branch = "main"
+let g:vimwiki_list = [{'path':'$HOME/vimwiki'}]
+let g:sync_taskwarrior = 0
+let g:vimwiki_sync_commit_message = 'Auto commit made by vimwiki-sync'
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

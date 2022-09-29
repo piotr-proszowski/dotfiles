@@ -41,6 +41,9 @@ let g:vimwiki_auto_chdir=1
 set noswapfile
 ```
 
+### vimwiki-sync
+It's also worth to continously backup notes on some remote server - in case of emergency ;) For that I use git and plugin [vimwiki-sync](https://github.com/michal-h21/vimwiki-sync)
+
 ### vim commentary
 Allows me to comment with `gcc`. Why vim didn't have such a feature? I don't know.
 
