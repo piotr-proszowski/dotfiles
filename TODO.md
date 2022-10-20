@@ -9,3 +9,4 @@ review in vim hangs when there are bigger files
 - static imports (In IntelliJ it's done via context help...) in VIM
 - Better syntax highlighing in vim
 - CLI tool for fetching depenedncies from mvnrepository 
+- checkout https://github.com/hluk/copyq-commands/tree/master/Automatic - seems like something youre looking for improving copyq performance
