@@ -108,6 +108,7 @@ plugins=(
   ag
   emoji
   ripgrep
+  cp
 )
 
 source $ZSH/oh-my-zsh.sh

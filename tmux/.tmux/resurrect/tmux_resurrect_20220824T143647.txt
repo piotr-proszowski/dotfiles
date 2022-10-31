@@ -1,7 +1,0 @@
-pane	0	1	1	:*	0	polpc09932	:/Users/piotr.proszowski/Workshop/awesome-project	0	zsh	:
-pane	0	1	1	:*	1	polpc09932	:/Users/piotr.proszowski/Workshop/awesome-project	1	vim	:vim .
-pane	0	1	1	:*	2	polpc09932	:/Users/piotr.proszowski/Workshop/awesome-project	0	java	:/Users/piotr.proszowski/.sdkman/candidates/java/current/bin/java -Xmx64m -Xms64m -Dorg.gradle.appname=gradlew -classpath /Users/piotr.proszowski/Workshop/awesome-project/gradle/wrapper/gradle-wrapper.jar org.gradle.wrapper.GradleWrapperMain run
-pane	1	1	1	:*	0	polpc09932	:/Users/piotr.proszowski	1	zsh	:
-window	0	1	:vim	1	:*	f49e,105x32,0,0[105x15,0,0{52x15,0,0,17,52x15,53,0,18},105x16,0,16,7]	:
-window	1	1	:zsh	1	:*	ca83,123x38,0,0,6	:
-state	0	1
