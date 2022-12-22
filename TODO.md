@@ -11,3 +11,4 @@ review in vim hangs when there are bigger files
 - CLI tool for fetching depenedncies from mvnrepository 
 - checkout https://github.com/hluk/copyq-commands/tree/master/Automatic - seems like something youre looking for improving copyq performance
 - check out this VIM plugin: https://github.com/yegappan/mru
+- clean up tmux resurrcections?

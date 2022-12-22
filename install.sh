@@ -41,13 +41,15 @@ chsh -s /usr/local/bin/zsh
 ## Install zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-## Link configuration
+### Link configuration
 ln -s ~/dotfiles/zsh/.zshrc ~/.zshrc
 
 ## Powerlevel10k
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
-## Link configurations
+## Autocompletion
+https://apple.stackexchange.com/a/377857
+
 ### In case of ohmyzsh I would recommend to fork my repository and maintain own fork with all changes
 ln -s ~/dotfiles/oh-my-zsh/ohmyzsh ~/.oh-my-zsh
 ln -s ~/dotfiles/oh-my-zsh/powerlevel10k/.p10k.zsh ~/.p10k.zsh

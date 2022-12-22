@@ -154,7 +154,23 @@ alias cat='ccat'
 alias k='k --no-vcs'
 alias ls='k'
 alias l='ls'
-alias vimwiki='vim ~/vimwiki/index.wiki'
+function vimwiki() {
+  wiki=$(gum choose 'Allegro' 'Brave Bettor' 'Self Development')
+
+  if [ $wiki = "Allegro" ]; 
+  then
+    vim ~/vimwiki/index.wiki
+  elif [ $wiki = "Brave Bettor" ];
+  then
+    vim ~/Workshop/brave-bettor/vimwiki/index.wiki
+  elif [ $wiki = "Self Development" ];
+  then;
+    vim ~/Projects/blog/tech/vimwiki/index.wiki
+  else
+    echo "Invalid input: $wiki"
+  fi
+
+}
 alias new-project='bash ~/project-templates/new-project.sh'
 
 [[ -s "$HOME/.local/share/marker/marker.sh" ]] && source "$HOME/.local/share/marker/marker.sh"
@@ -176,6 +192,10 @@ export GOPATH=~/go
 export PATH=$PATH:$GOPATH/bin
 
 export BARTIB_FILE="/Users/piotr.proszowski/activities.bartib"
+
+# Hugo autocompletion
+autoload -U compinit; compinit
+source <(hugo completion zsh); compdef _hugo hugo
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
