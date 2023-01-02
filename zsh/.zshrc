@@ -159,7 +159,7 @@ function vimwiki() {
 
   if [ $wiki = "Allegro" ]; 
   then
-    vim ~/vimwiki/index.wiki
+    vim ~/vimwiki/allegro/index.wiki
   elif [ $wiki = "Brave Bettor" ];
   then
     vim ~/Workshop/brave-bettor/vimwiki/index.wiki

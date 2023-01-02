@@ -182,7 +182,7 @@ set noswapfile
 
 " for vimwiki-sync
 let g:vimwiki_sync_branch = "main"
-let g:vimwiki_list = [{'path':'$HOME/vimwiki'}]
+let g:vimwiki_list = [{'path':'$HOME/vimwiki', 'syntax': 'markdown'}]
 let g:sync_taskwarrior = 0
 let g:vimwiki_sync_commit_message = 'Auto commit made by vimwiki-sync'
 
