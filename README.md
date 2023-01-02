@@ -132,5 +132,12 @@ Cool way of writing scripts. [Gum repo](https://github.com/charmbracelet/gum)
 ## md2confl
 Awesome tool for converting `.md` files to `.confl`. I like write notes in `markdown` so when I have to create jira ticket I don't need to convert manually my notes to Jira format.
 
+## jd
+[Awesome tool for json diff](https://github.com/josephburnett/jd).
+
+## ghostie
+Github notifications in terminal
+
+
 ## Vim
 Because I'm using Vim a lot I decided to create special list for it: [LINK](./vim/README.md)

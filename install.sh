@@ -187,5 +187,8 @@ brew install bartib
 brew tap kentaro-m/homebrew-md2confl
 brew install md2confl
 
+## jd
+brew install jd
+
 ## MacOS
 sudo ~/dotfiles/macos/.macos
