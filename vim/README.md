@@ -50,6 +50,9 @@ Allows me to comment with `gcc`. Why vim didn't have such a feature? I don't kno
 ### Fzf vim
 Mostly useful for searching files. I mapped leader + f to `Ag` so I have similar experience as in IntelliJ for files searching.
 
+## gh-line
+Takes you from the vim to github page (with line highlighted or to blame or just the main page of project). Super useful, especially when I want to give a link to some ticket or in the message.
+
 
 Those are most beneficial features, however maybe I missed something.
 If you noticed something I'm using and it's not mentioned here - please let me know! :)
