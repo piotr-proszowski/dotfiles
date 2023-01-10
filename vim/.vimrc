@@ -2,6 +2,7 @@
 set nocompatible
 
 call plug#begin()
+Plug 'ruanyl/vim-gh-line'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'zsh-users/zsh-syntax-highlighting'
