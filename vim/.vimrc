@@ -26,6 +26,7 @@ Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'tpope/vim-commentary'
 Plug 'ashisha/image.vim'
+Plug 'skywind3000/asyncrun.vim'
 call plug#end()
 
 set history=5000

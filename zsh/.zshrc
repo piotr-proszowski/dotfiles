@@ -109,6 +109,7 @@ plugins=(
   emoji
   ripgrep
   cp
+  emoji-cli
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -165,12 +166,17 @@ function vimwiki() {
     vim ~/Workshop/brave-bettor/vimwiki/index.wiki
   elif [ $wiki = "Self Development" ];
   then;
-    vim ~/Projects/blog/tech/vimwiki/index.wiki
+    vim ~/vimwiki/self-development/index.wiki
   else
     echo "Invalid input: $wiki"
   fi
 
 }
+
+function cdfd() {
+  cd $(fd $1 | fzf)
+}
+
 alias new-project='bash ~/project-templates/new-project.sh'
 
 [[ -s "$HOME/.local/share/marker/marker.sh" ]] && source "$HOME/.local/share/marker/marker.sh"
