@@ -2,6 +2,9 @@
 set nocompatible
 
 call plug#begin()
+Plug 'easymotion/vim-easymotion'
+Plug 'godlygeek/tabular'
+Plug 'preservim/vim-markdown'
 Plug 'ruanyl/vim-gh-line'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -17,7 +20,7 @@ Plug 'jistr/vim-nerdtree-tabs'
 " Plug 'airblade/vim-gitgutter'
 Plug 'vimwiki/vimwiki'
 Plug 'michal-h21/vimwiki-sync'
-Plug 'pseewald/anyfold'
+" Plug 'pseewald/anyfold'
 " Plug 'kien/ctrlp.vim' not that useful if you have ag ;)
 Plug 'tpope/vim-rhubarb'
 Plug 'Raimondi/delimitMate'
@@ -428,3 +431,14 @@ let g:ycm_language_server =
 
 " vim-commentary
 " autocmd FileType apache setlocal commentstring=#\ %s
+
+
+" vim markdown
+let g:vim_markdown_auto_extension_ext = 'wiki'
+
+" any-jump
+let g:any_jump_grouping_enabled = 1
+let g:any_jump_results_ui_style = 'filename_first'
+
+" No automatic fold
+set nofoldenable
