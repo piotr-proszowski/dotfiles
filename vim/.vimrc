@@ -1,7 +1,7 @@
-
 set nocompatible
 
 call plug#begin()
+Plug 'matze/vim-move'
 Plug 'easymotion/vim-easymotion'
 Plug 'godlygeek/tabular'
 Plug 'preservim/vim-markdown'
@@ -28,7 +28,7 @@ Plug 'pechorin/any-jump.vim'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'tpope/vim-commentary'
-Plug 'ashisha/image.vim'
+" Plug 'ashisha/image.vim'
 Plug 'skywind3000/asyncrun.vim'
 call plug#end()
 
@@ -151,7 +151,7 @@ if $COLORTERM == 'gnome-terminal'
 endif
 
 try
-    colorscheme space-vim-dark
+    colorscheme challenger_deep
 catch
 endtry
 
@@ -442,3 +442,7 @@ let g:any_jump_results_ui_style = 'filename_first'
 
 " No automatic fold
 set nofoldenable
+
+" vim-move
+let g:move_key_modifier = 'C'
+let g:move_key_modifier_visualmode = 'C'

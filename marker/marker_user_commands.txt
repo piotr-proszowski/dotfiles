@@ -3,7 +3,7 @@ awk '$0 ~ /"orderId"/ {getline; gsub(/"/,""); print $2}' results##get order id
 for i in *; do mv $i $(echo $i | awk 'gsub(/{{to_be_replaced}}/,"{{replacement}}")'); done##rename multiple files
 eval $(cat commands.sh | fzf)##presentation
 ls -la##search for everything
-curl http://hermes-events-handler.dh-test.qxlint/pl.allegro.finance.vatoss.CalculationResultEvent/{{message_id}} | jq .event -M | pbcopy##get hermes event by message id
+curl http://hermes-events-handler.dh-test.qxlint/{{topic_name}}/{{message_id}} | jq .event -M | pbcopy##get hermes event by message id
 curl http://listing-user-data.dh-test.qxlint/listing-user-data/users\?login\={{user_login}}##get user id allegro
 sed -i .bak 's/PLN/CZK/g' {{file_name}}; sed -i .bak 's/PL/CZ/g' {{file_name}}##PLN to CZK
 kubectl config use-context minikube-vpn##minikube vpn

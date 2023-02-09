@@ -5,7 +5,7 @@ function uuid() {
 }
 
 function gch() {
-   git checkout "$(git branch --all | fzf | tr -d ' ' | sed 's|remotes/origin/||g')"
+   git ch
 }
 
 function note() {
