@@ -135,9 +135,5 @@ Awesome tool for converting `.md` files to `.confl`. I like write notes in `mark
 ## jd
 [Awesome tool for json diff](https://github.com/josephburnett/jd).
 
-## ghostie
-Github notifications in terminal
-
-
 ## Vim
 Because I'm using Vim a lot I decided to create special list for it: [LINK](./vim/README.md)
