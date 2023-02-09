@@ -2,10 +2,10 @@
 
 Inspired by [this post](http://iamnotmyself.com/2020/11/10/your-terminal-and-you-dotfiles/) I decided to create my own dotfiles repository which leads me step by step (and anyone who is interested in my workflow) to my favourite computer configuration. Please have in mind, that those configuration works well for me - probably there are many things you would like to have configured differently :)
 
-Worth noting: I use this configuration on MacOS (most of things should work on any *nix operating system but not all of them).
+**NOTE: I use this configuration on MacOS (most of things should work on any *nix operating system but not all of them).**
 
 Each piece of software collected here has explanation what it is and how do I use it below.
-How to configure each piece of software is inside `install.sh` script.
+How to configure each piece of software is inside `install.sh` script - don't be surprised if not everything works right away - there is a chance I omitted something accidentially - treat this file as an inspiration rather than runnable script that will set up everything.
 
 [Any comments and suggestions will be appreciated!](https://github.com/piotr-proszowski/dotfiles/issues)
  
