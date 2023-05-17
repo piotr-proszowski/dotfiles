@@ -1,0 +1,21 @@
+pane	allegro	1	1	:*	0	polpc09932	:/Users/piotr.proszowski/vimwiki	0	vim	:vim /Users/piotr.proszowski/vimwiki/allegro/index.wiki
+pane	allegro	1	1	:*	1	polpc09932	:/Users/piotr.proszowski/vimwiki	1	zsh	:-zsh
+pane	allegro	2	0	:-	0	polpc09932	:/Users/piotr.proszowski/Projects/amelinium/vat-oss-acceptance-tests	1	zsh	:
+pane	blog	1	1	:##*	0	polpc09932	:/Users/piotr.proszowski/vimwiki	0	vim	:vim /Users/piotr.proszowski/vimwiki/self-development/index.wiki
+pane	blog	1	1	:##*	1	polpc09932	:/Users/piotr.proszowski/vimwiki	1	zsh	:
+pane	blog	1	1	:##*	2	polpc09932	:/Users/piotr.proszowski/Workshop/gamefully	0	java	:/Users/piotr.proszowski/.sdkman/candidates/java/current/bin/java -Xmx64m -Xms64m -Dorg.gradle.appname=gradlew -classpath /Users/piotr.proszowski/Workshop/gamefully/gradle/wrapper/gradle-wrapper.jar org.gradle.wrapper.GradleWrapperMain build -x iT -t
+pane	blog	2	0	:-	0	polpc09932	:/Users/piotr.proszowski/Workshop/gamefully	1	zsh	:
+pane	brave-bettor	1	1	:*	0	polpc09932	:/Users/piotr.proszowski/Workshop/brave-bettor	0	vim	:vim README.md
+pane	brave-bettor	1	1	:*	1	polpc09932	:/Users/piotr.proszowski/Projects/amelinium/currency-exchange-rates-collector	0	vim	:vim .
+pane	brave-bettor	1	1	:*	2	mongosh mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000	:/Users/piotr.proszowski/Workshop/brave-bettor	1	zsh	:
+pane	brave-bettor	1	1	:*	3	polpc09932	:/Users/piotr.proszowski/Workshop/brave-bettor	0	vim	:vim TODO.md
+pane	brave-bettor	2	0	:-	0	polpc09932	:/Users/piotr.proszowski/Workshop/bet-it/bet-it-infra/prod	1	vim	:vim docker-compose-bet-it.yml
+pane	dotfiles	1	1	:*	0	polpc09932	:/Users/piotr.proszowski/dotfiles	1	zsh	:
+window	allegro	1	:vimwiki	1	:*	a0d3,123x38,0,0[123x19,0,0,1,123x18,0,20,44]	off
+window	allegro	2	:zsh	0	:-	e56f,123x38,0,0,20	:
+window	blog	1	:zsh	1	:##*	f9ba,123x38,0,0{61x38,0,0[61x19,0,0,2,61x18,0,20,14],61x38,62,0,10}	:
+window	blog	2	:zsh	0	:-	6574,123x38,0,0,15	:
+window	brave-bettor	1	:zsh	1	:*	ce76,123x38,0,0[123x19,0,0{62x19,0,0,3,60x19,63,0,4},123x18,0,20{62x18,0,20,5,60x18,63,20,6}]	:
+window	brave-bettor	2	:vim	0	:-	ca84,123x38,0,0,7	:
+window	dotfiles	1	:zsh	1	:*	ca85,123x38,0,0,8	:
+state	allegro	blog

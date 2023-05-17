@@ -12,7 +12,6 @@ Plug 'zsh-users/zsh-syntax-highlighting'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'vim-scripts/groovy.vim'
 Plug 'hdiniz/vim-gradle'
-Plug 'valloric/youcompleteme'
 Plug 'sheerun/vim-polyglot'
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'preservim/nerdtree'
@@ -20,7 +19,7 @@ Plug 'jistr/vim-nerdtree-tabs'
 " Plug 'airblade/vim-gitgutter'
 Plug 'vimwiki/vimwiki'
 Plug 'michal-h21/vimwiki-sync'
-" Plug 'pseewald/anyfold'
+" Plug 'pseewald/anyfold' - default vim folds are enough
 " Plug 'kien/ctrlp.vim' not that useful if you have ag ;)
 Plug 'tpope/vim-rhubarb'
 Plug 'Raimondi/delimitMate'
@@ -30,6 +29,8 @@ Plug 'honza/vim-snippets'
 Plug 'tpope/vim-commentary'
 " Plug 'ashisha/image.vim'
 Plug 'skywind3000/asyncrun.vim'
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer' }
+Plug 'vim-ruby/vim-ruby'
 call plug#end()
 
 set history=5000
@@ -435,6 +436,7 @@ let g:ycm_language_server =
 
 " vim markdown
 let g:vim_markdown_auto_extension_ext = 'wiki'
+set conceallevel=2
 
 " any-jump
 let g:any_jump_grouping_enabled = 1

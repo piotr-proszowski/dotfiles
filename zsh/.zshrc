@@ -5,6 +5,10 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+
+# Set languge - i.e. git uses it
+export LANG="en_US.UTF-8"
+
 # load module for list-style selection
 zmodload zsh/complist
 
@@ -110,6 +114,7 @@ plugins=(
   ripgrep
   cp
   emoji-cli
+  gcloud
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -139,7 +144,7 @@ source $ZSH/oh-my-zsh.sh
 # Aliases
 alias zshrc="vim ~/.zshrc"
 alias vimrc="vim ~/.vimrc"
-alias idea="(~/Library/Application\ Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/221.6008.13/IntelliJ\ IDEA.app/Contents/MacOS/idea .&) &> /dev/null"
+alias idea="(~/Library/Application\ Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/231.8109.175/IntelliJ\ IDEA.app/Contents/MacOS/idea .&) &> /dev/null"
 alias avro="java -jar ~/dotfiles/tools/avro-tools.jar"
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 alias batdiff="git diff --name-only --diff-filter=d | xargs bat --diff"
@@ -202,6 +207,9 @@ export BARTIB_FILE="/Users/piotr.proszowski/activities.bartib"
 # Hugo autocompletion
 autoload -U compinit; compinit
 source <(hugo completion zsh); compdef _hugo hugo
+
+CLOUD_SDK_HOME=/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk
+source "${CLOUD_SDK_HOME}/completion.zsh.inc"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"

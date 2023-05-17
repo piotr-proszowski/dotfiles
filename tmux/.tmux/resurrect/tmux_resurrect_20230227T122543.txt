@@ -1,0 +1,24 @@
+pane	allegro	1	0	:	0	polpc09932	:/Users/piotr.proszowski/vimwiki	1	vim	:vim /Users/piotr.proszowski/vimwiki/allegro/index.wiki
+pane	allegro	2	0	:-	0	polpc09932	:/Users/piotr.proszowski/Projects/amelinium/vatoss-scripts-tool/scripts/FIN-2967-make-vat-correction	1	vim	:vim verify_billing_entries.py
+pane	allegro	2	0	:-	1	polpc09932	:/Users/piotr.proszowski/Projects/amelinium/vatoss-scripts-tool/scripts/FIN-2967-make-vat-correction	0	vim	:vim README.md
+pane	allegro	3	1	:*	0	polpc09932	:/Users/piotr.proszowski/Projects/amelinium/vatoss-scripts-tool/scripts/FIN-2967-make-vat-correction	0	zsh	:
+pane	allegro	3	1	:*	1	polpc09932	:/Users/piotr.proszowski/vimwiki	1	zsh	:
+pane	blog	1	0	:-	0	polpc09932	:/Users/piotr.proszowski/vimwiki	1	vim	:vim /Users/piotr.proszowski/vimwiki/self-development/index.wiki
+pane	blog	2	1	:*	0	polpc09932	:/Users/piotr.proszowski/Workshop/gamefully	1	zsh	:
+pane	brave-bettor	1	1	:*	0	polpc09932	:/Users/piotr.proszowski/Workshop/brave-bettor	0	vim	:vim README.md
+pane	brave-bettor	1	1	:*	1	polpc09932	:/Users/piotr.proszowski/Projects/amelinium/currency-exchange-rates-collector	0	vim	:vim .
+pane	brave-bettor	1	1	:*	2	mongosh mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000	:/Users/piotr.proszowski/Workshop/brave-bettor	1	zsh	:
+pane	brave-bettor	1	1	:*	3	polpc09932	:/Users/piotr.proszowski/Workshop/brave-bettor	0	vim	:vim TODO.md
+pane	brave-bettor	2	0	:-	0	polpc09932	:/Users/piotr.proszowski/Workshop/bet-it/bet-it-infra/prod	1	vim	:vim docker-compose-bet-it.yml
+pane	dotfiles	1	1	:*	0	polpc09932	:/Users/piotr.proszowski/dotfiles	1	zsh	:
+pane	rudy	1	1	:*	0	polpc09932	:/Users/piotr.proszowski/Workshop/rudy	1	vim	:vim notes
+window	allegro	1	:vimwiki	0	:	c23e,132x36,0,0,1	off
+window	allegro	2	:vim	0	:-	5db6,132x36,0,0{66x36,0,0,14,65x36,67,0,43}	:
+window	allegro	3	:zsh	1	:*	d573,123x38,0,0[123x19,0,0,52,123x18,0,20,54]	:
+window	blog	1	:vim	0	:-	ca81,123x38,0,0,4	:
+window	blog	2	:zsh	1	:*	e150,132x36,0,0,40	:
+window	brave-bettor	1	:zsh	1	:*	3b1f,123x38,0,0[123x19,0,0{62x19,0,0,8,60x19,63,0,9},123x18,0,20{62x18,0,20,10,60x18,63,20,11}]	:
+window	brave-bettor	2	:vim	0	:-	6571,123x38,0,0,12	:
+window	dotfiles	1	:zsh	1	:*	6572,123x38,0,0,13	:
+window	rudy	1	:vim	1	:*	6574,123x38,0,0,53	:
+state	allegro	rudy
