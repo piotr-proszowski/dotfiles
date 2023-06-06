@@ -214,3 +214,4 @@ source "${CLOUD_SDK_HOME}/completion.zsh.inc"
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+export PATH="/usr/local/opt/ruby/bin:$PATH"

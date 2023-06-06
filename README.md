@@ -12,9 +12,6 @@ How to configure each piece of software is inside `install.sh` script - don't be
 ## Kitty
 As a terminal emulator I like to use [kitty](https://sw.kovidgoyal.net/kitty/), because it's super fast and simple - it just has a [single configuration file](./kitty/kitty.conf). Previously I was using [iTerm2](https://iterm2.com/) but it was significantly slower for me and configuration seemed to be harder.
 
-## Hammerspoon
-I like to have my terminal very close to me, that's why it appears and disappears with `⌘ + §`. For this I use [hammerspoon](https://www.hammerspoon.org/). I use it because... it worked :D Probably I could migrate to [Karabiner](https://github.com/pqrs-org/Karabiner-Elements) someday. 
-
 ## Karabiner
 Caps lock is a funny button on a keyboard - it's functionality is so useless that I decided to remap it to `F3`. As I don't know many usages of `F3` I can use this key for lot of actions. For example Caps Lock (mapped to F3) is my `mapleader` in `VIM` - I find it super useful!
 
