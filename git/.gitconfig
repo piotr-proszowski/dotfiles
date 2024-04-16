@@ -1,6 +1,6 @@
 [user]
-	email = piotr.proszowski@allegro.pl
-	name = piotr-proszowski
+	email = piotr.proszowski@allegro.com
+	name = Piotr Proszowski
 
 [branch]
     autosetupmerge = true
@@ -156,7 +156,7 @@
 [apply]
     whitespace = nowarn
 [core]
-    pager = less -R
+    pager = delta
 [help]
     autocorrect = 1 #fucking magic!
 [filter "lfs"]
@@ -165,7 +165,22 @@
 	process = git-lfs filter-process
 	required = true
 [init]
-	templatedir = ~/.git_template/template
-	defaultBranch = main
+	templatedir = ~/dotfiles/git/.git-template/template
+	defaultBranch = master
 [hub]
 	protocol = ssh
+[interactive]
+  diffFilter = delta --color-only
+[delta]
+  navigate = true    # use n and N to move between diff sections
+  light = false      # set to true if you're in a terminal w/ a light background color (e.g. the default macOS terminal)
+[merge]
+  conflictstyle = diff3
+[diff]
+  colorMoved = default
+[oh-my-zsh]
+	hide-status = 1
+	hide-status = 1
+	hide-dirty = 1
+[protocol "file"]
+	allow = always

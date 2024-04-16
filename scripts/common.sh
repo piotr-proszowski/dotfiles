@@ -27,7 +27,7 @@ function copy() {
 }
 
 function paste-image() {
-  copyq read image/png 0 > $1.png
+  ~/Applications/CopyQ.app/Contents/MacOS/CopyQ read image/png 0 > $1.png
 }
 
 function draw() {

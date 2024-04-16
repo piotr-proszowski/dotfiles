@@ -64,3 +64,4 @@ jq """
       }
     ]
   }
+github {{query}} org:allegro-internal##allegro search

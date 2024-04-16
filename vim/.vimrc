@@ -24,13 +24,17 @@ Plug 'michal-h21/vimwiki-sync'
 Plug 'tpope/vim-rhubarb'
 Plug 'Raimondi/delimitMate'
 Plug 'pechorin/any-jump.vim'
-Plug 'SirVer/ultisnips'
+" Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'tpope/vim-commentary'
 " Plug 'ashisha/image.vim'
 Plug 'skywind3000/asyncrun.vim'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer' }
 Plug 'vim-ruby/vim-ruby'
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-rbenv'
+Plug 'tpope/vim-bundler'
+Plug 'vim-autoformat/vim-autoformat'
 call plug#end()
 
 set history=5000
@@ -448,3 +452,28 @@ set nofoldenable
 " vim-move
 let g:move_key_modifier = 'C'
 let g:move_key_modifier_visualmode = 'C'
+
+" Go config
+let g:go_highlight_types = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_function_calls = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_extra_types = 1
+let g:go_highlight_build_constraints = 1
+let g:go_highlight_generate_tags = 1
+
+" disable all linters as that is taken care of by coc.nvim
+let g:go_diagnostics_enabled = 0
+let g:go_metalinter_enabled = []
+
+" don't jump to errors after metalinter is invoked
+let g:go_jump_to_error = 0
+
+" run go imports on file save
+let g:go_fmt_command = "goimports"
+
+" automatically highlight variable your cursor is on
+let g:go_auto_sameids = 0
+
+let g:python3_host_prog="/usr/bin/python3"

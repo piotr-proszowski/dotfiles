@@ -1,10 +1,10 @@
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
+zmodload zsh/zprof
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
-
 
 # Set languge - i.e. git uses it
 export LANG="en_US.UTF-8"
@@ -93,6 +93,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+  rails
   fzf-tab
   git
   zsh-syntax-highlighting
@@ -144,10 +145,13 @@ source $ZSH/oh-my-zsh.sh
 # Aliases
 alias zshrc="vim ~/.zshrc"
 alias vimrc="vim ~/.vimrc"
-alias idea="(~/Library/Application\ Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/231.8109.175/IntelliJ\ IDEA.app/Contents/MacOS/idea .&) &> /dev/null"
+alias vscode="(/Applications/Visual\ Studio\ Code.app/Contents/MacOS/Electron .&) &> /dev/null"
 alias avro="java -jar ~/dotfiles/tools/avro-tools.jar"
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 alias batdiff="git diff --name-only --diff-filter=d | xargs bat --diff"
+alias sd="/usr/local/bin/sd"
+
+eval "$(rbenv init - zsh)"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -158,10 +162,8 @@ alias tcr='sh ~/dotfiles/tcr.sh'
 alias jq='jq -C'
 alias cat='ccat'
 alias k='k --no-vcs'
-alias ls='k'
-alias l='ls'
 function vimwiki() {
-  wiki=$(gum choose 'Allegro' 'Brave Bettor' 'Self Development')
+  wiki=$(gum choose 'All' 'Allegro' 'Brave Bettor' 'Self Development')
 
   if [ $wiki = "Allegro" ]; 
   then
@@ -172,6 +174,9 @@ function vimwiki() {
   elif [ $wiki = "Self Development" ];
   then;
     vim ~/vimwiki/self-development/index.wiki
+  elif [ $wiki = "All" ];
+  then;
+    vim ~/vimwiki/All/index.wiki
   else
     echo "Invalid input: $wiki"
   fi
@@ -202,16 +207,23 @@ ret () { cat /tmp/capture.out; }
 export GOPATH=~/go
 export PATH=$PATH:$GOPATH/bin
 
+alias mdl=/usr/local/lib/ruby/gems/3.2.0/gems/mdl-0.12.0/bin/mdl
+
 export BARTIB_FILE="/Users/piotr.proszowski/activities.bartib"
 
 # Hugo autocompletion
-autoload -U compinit; compinit
-source <(hugo completion zsh); compdef _hugo hugo
+# autoload -U compinit; compinit
+# source <(hugo completion zsh); compdef _hugo hugo
 
 CLOUD_SDK_HOME=/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk
 source "${CLOUD_SDK_HOME}/completion.zsh.inc"
 
+export KEEPASSDB="/Users/piotr.proszowski/.passwords.kdbx"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+# [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-export PATH="/usr/local/opt/ruby/bin:$PATH"
