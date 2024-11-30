@@ -184,3 +184,20 @@
 	hide-dirty = 1
 [protocol "file"]
 	allow = always
+[safe]
+	directory = /work
+	directory = /work
+	directory = /work
+	directory = /work
+	directory = /work
+	directory = /work
+	directory = /work
+	directory = /work
+	directory = /work
+	directory = /work
+	directory = /work
+	directory = /work
+	directory = /work
+	directory = /work
+	directory = /work
+	directory = /work

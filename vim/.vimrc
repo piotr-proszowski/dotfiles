@@ -477,3 +477,5 @@ let g:go_fmt_command = "goimports"
 let g:go_auto_sameids = 0
 
 let g:python3_host_prog="/usr/bin/python3"
+
+vnoremap p "_dP

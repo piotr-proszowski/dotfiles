@@ -150,6 +150,7 @@ alias avro="java -jar ~/dotfiles/tools/avro-tools.jar"
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 alias batdiff="git diff --name-only --diff-filter=d | xargs bat --diff"
 alias sd="/usr/local/bin/sd"
+alias nvml="source ~/.nvm/nvm.sh"
 
 eval "$(rbenv init - zsh)"
 
@@ -219,10 +220,6 @@ CLOUD_SDK_HOME=/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk
 source "${CLOUD_SDK_HOME}/completion.zsh.inc"
 
 export KEEPASSDB="/Users/piotr.proszowski/.passwords.kdbx"
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-# [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
